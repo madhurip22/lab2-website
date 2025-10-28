@@ -25,8 +25,13 @@ body {
 }
 
 .navbar li a:hover {
-    background-color: #555; /* hover color */
+    background-color: #555; 
 }
+
+.navbar li a.active {
+    background-color: #FFB6C1;
+}
+
 
 @media (max-width: 600px) {
     .navbar {
