@@ -3,24 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Madhuri Parasa - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <nav class="navbar">
-        <div class="logo">Lab 2 Website</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <div class="logo">Madhuri Parasa</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
     </nav>
-    <div class="content">
-        <h1>Welcome to My Website!</h1>
-        <p>Add info here!!!</p>
-    </div>
+
+   
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Get to Know Me</h1>
+            <p class="intro">Hello! My name is Madhuri Parasa. I am currently a student at University of Washington, majoring in Geography Data Science. I enjoy learning about technology, coding, and am excited to be taking this class :).</p>
+            
+            <!-- Custom Element 1: Image Gallery Grid -->
+            <h2>Some Pictures of My Life</h2>
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img src=>
+                    <p></p>
+                </div>
+                <div class="grid-item">
+                    <img src=>
+                    <p></p>
+                </div>
+                <div class="grid-item">
+                    <img src=>
+                    <p></p>
+                </div>
+                <div class="grid-item">
+                    <img src=>
+                    <p></p>
+                </div>
+            </div>
+
+            <h2>Some Fun Facts About Me</h2>
+            <div class="hobbies-list">
+                <div class="hobby-card">
+                    <h3>I have had 5 different types of animals as petsg</h3>
+                    <p>In order (but at different times) I have had fish, a bunny, parakeets, a dog, and now my cat!</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>I'm learning how to ride a motorcycle</h3>
+                    <p>I've always found motorcycles fascinating and super cool! I'm super excited to get a bike of my own and take it out for long rides.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>I'm studying abroad in New Zealand next quarter</h3>
+                    <p>I'm going to NZ through an iSchool program and am so beyond excited to experience life there and make new friends!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+                
+            <h2>Learn More</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        What is Geography Data Science?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Geography Data Science combines GIS, spatial analysis, and data science techniques to analyze location-based data and solve spatial problems.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        Why did you choose this major?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>I'm interested in  how location and spatial patterns can influence so many categories of things! Combining this with data science allows me to make meaningful insights from spatial data.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        What are your career goals?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>I'm interested in careers that combine data visualization, and technology- like tech companies working with location-based services!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h1>Connect with Me</h1>
+            <p>I'd love to hear from you! Feel free to reach out through any of the platforms below.</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/madhurip22" target="_blank" class="social-card">
+                    <h3>GitHub</h3>
+                    <p>github.com/madhurip22</p>
+                </a>
+                <a href="https://www.linkedin.com/in/madhuriparasa/" target="_blank" class="social-card">
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/madhuriparasa</p>
+                </a>
+            </div>
+
+
     <script src="js/script.js"></script>
 </body>
 </html>
